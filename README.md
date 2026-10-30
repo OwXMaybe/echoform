@@ -14,6 +14,7 @@
   <img alt="304 unit tests" src="https://img.shields.io/badge/unit_tests-304-12a5bd?style=flat-square">
   <img alt="14 browser workflows" src="https://img.shields.io/badge/browser_workflows-14-9772ec?style=flat-square">
   <img alt="Audio stays local" src="https://img.shields.io/badge/audio-stays_local-22d3ee?style=flat-square">
+  <a href="LICENSE"><img alt="MIT licence" src="https://img.shields.io/badge/licence-MIT-0b1018?style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -201,3 +202,7 @@ The [technical reference](docs/TECHNICAL.md) has the full list and every measure
 - Firefox and Safari coverage
 - Export of processed audio and direct PDF reports
 - Optional source separation using a real model
+
+## Licence
+
+Released under the [MIT Licence](LICENSE).
