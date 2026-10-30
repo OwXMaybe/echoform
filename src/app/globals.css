@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-deep: #0b1018;
+  --color-surface: #101621;
+  --color-raised: #182130;
+  --color-line: #263246;
+  --color-ink: #eef2f7;
+  --color-muted: #9aa8bb;
+  --color-faint: #8391a6;
+  --color-accent: #22d3ee;
+  --color-violet: #a78bfa;
+  --color-amber: #fbbf24;
+  --color-danger: #f87171;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-deep);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+/* Native pickers inherit the dark surface instead of the OS default white. */
+select option {
+  background: var(--color-raised);
+}
+
+input[type="range"] {
+  accent-color: var(--color-accent);
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
